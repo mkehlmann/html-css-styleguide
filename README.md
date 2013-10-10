@@ -66,6 +66,14 @@ All words in a selector should be lower case
 }
 ```
 
+### File Size + Structure
+Files should be no more than 500 lines, logic permitting
+Modules should be organized into files based on their function.
+For example, the buttons module can be seen at: http://foolink.com
+
+"If two modules are very similar with only barely noticable changes to stuff like the shadow, padding and colours combine them into one."
+
+
 *Based on the excellent work done by Richard Powell [here](https://github.com/byrichardpowell/CSS-Style)*
 
 }

@@ -1,8 +1,70 @@
 SALT CSS Syntax + Style Guide {
 ==================
 
-*A mostly reasonable approach to CSS*
-*Based on the excellent work done by Richard Powell [here](https://github.com/byrichardpowell/CSS-Style)*
+SALT is a "mobile-first" site.  The user experience on a mobile device should feel as seamless as on a desktop.  We also want to load only the static resources needed.
+Our ability to create changable layouts is based on "The Grid".  Please see the following for an explanation.
+
+http://foundation.zurb.com/docs/components/grid.html
+
+## General Rules
+
+No inline styles -- all styles should belong in an external stylesheet
+
+If you are unfamiliar with the box model, do not pass GO, read this: https://developer.mozilla.org/en-US/docs/Web/CSS/box_model
+
+Rule Precedence -- Should be alphabetical
+
+```css
+.foo {
+  border: 1px solid black;
+  color: black;
+}
+```
+
+##Whitespace
+
+* _Never_ mix spaces and tabs for indentation.
+* Use tabs (set to a size of 4 spaces)
+* One space after selector before opening curly bracket
+* After colon, one space before rule
+* No one liners
+
+```css
+//GOOD
+.foo {
+  border: 1px solid black;
+}
+
+//BAD
+.foo{border :1px solid black; color: black;}
+```
+
+Tip: configure your editor to "show invisibles" or to automatically remove
+end-of-line whitespace.
+
+Tip: use an [EditorConfig](http://editorconfig.org/) file (or equivalent) to
+help maintain the basic whitespace conventions that have been agreed for your
+code-base.
+
+### !important
+Avoid the use of !important.  If you feel you must use it, document the heck out of why you did.
+
+### Selector Naming
+
+Selectors should use dashes in favor of underscores
+All words in a selector should be lower case
+
+```css
+//GOOD
+.foo-bar {
+  border: 1px solid black;
+}
+
+//BAD
+.FOO_bar {
+  border: 1px solid black;
+}
+```
 
 ### Minimise the use of element selectors
 
@@ -52,16 +114,6 @@ Source: [Google Page Speed on Minifying CSS](https://developers.google.com/speed
 
 Using a CSS Linter will make obvious whenever a rule is not matching the coding standard and best practices. It will make developers know something is wrong even before looking at it in the browser.
 When using Sublime Text a great solution is to use [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter), there are other options for other IDEs and it can also be used online via http://csslint.net/
-
-### Never Use Single line formatting
-
-CSS Architecture is more difficult to do well than it is difficult to understand CSS Properties. Reading long lines of CSS code makes it difficult to understand the properties of the rule. This, together with the correct ordering of the CSS properties make it really easy to understand a rule as first sight.
-
-Source: [SMACSS on formatting](https://smacss.com/book/formatting)
-
-### Use dashes to separate words
-
-CSS properties do not use underscores or camel case, they use dashes.  Do the same with classes
 
 ## Cross Browser
 
@@ -161,12 +213,6 @@ A state class ( e.g: .is-active, .is-empty ) is similar to a pseudo class in tha
 
 Source: [SMACSS on state](http://smacss.com/book/type-state)
 
-### Only State classes may use !important
-
-!important should be avoided as much as possible, as such state classes are the only acceptable use of important.  Even so !important should not be the go to solution as its akin to using a grenade when careful diplomacy would suffice.
-
-Source: [SMACSS on state](http://smacss.com/book/type-state)
-
 ### Icons do not belong in modules
 
 By styling icons independently of the module where it was first used you are making an icon that can be used in future modules without the need for duplication of code.
@@ -196,6 +242,9 @@ If you add a sprite image to the background of an element that has text what hap
 Adding icons to elements that have their text hidden out of bounds is also a good approach.
 
 Source: [SMACSS on Icons](http://smacss.com/book/icon-module)
+
+*A mostly reasonable approach to CSS*
+*Based on the excellent work done by Richard Powell [here](https://github.com/byrichardpowell/CSS-Style)*
 
 }
 =

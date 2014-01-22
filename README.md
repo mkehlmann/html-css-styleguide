@@ -86,6 +86,8 @@ For example, the buttons module can be seen at: http://foolink.com
   6. navigation.css -- code for the footer and mobile footer. Should be split into two modules soon.
   7. buttons.css -- button code. See below for how to use the button classes
   8. KWYO.css -- Styles that are currently specific only to the Know What You Owe tool. As these styles move into the rest of the site design, this CSS file should be refactored into a module that is shared across the site, rather than including KWYO.css on every page of the site.
+  9. featuredHeadline.css -- Module for creating the FEATURED section header on the homepage, the Content Type Sort pages, etc.
+  10. overlays.css -- any styles for SALT overlays
   
 
 #### How to create buttons on SALT

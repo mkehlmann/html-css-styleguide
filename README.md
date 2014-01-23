@@ -1,4 +1,4 @@
-SALT CSS Syntax + Style Guide {
+SALT CSS/HTML Syntax + Style Guide {
 ==================
 
 SALT is a "mobile-first" site.  The user experience on a mobile device should feel as seamless as on a desktop.  We also want to load only the static resources needed.
@@ -6,9 +6,11 @@ Our ability to create changable layouts is based on "The Grid".  Please see the 
 
 http://foundation.zurb.com/docs/components/grid.html
 
-## HTML5 Fallback
+## HTML5 Support
 
-In our implementaion of foundation 5, we use Webshims lib to provide fallback support for browsers that don't support certain features of HTML5. for a full list of the features and more info please refer to:
+In order to provide a consistent experience, we use a plugin "Webshims lib" to provide fallback support for browsers that don't support certain features of HTML5. This allows you to use HTML5 standard markup and validation patterns that will work in these non-compliant browsers (IE9, Safari, etc) out of the box.
+
+For a full list of the features and more info please refer to:
 
 http://afarkas.github.io/webshim/demos/
 

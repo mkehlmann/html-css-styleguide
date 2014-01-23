@@ -6,6 +6,12 @@ Our ability to create changable layouts is based on "The Grid".  Please see the 
 
 http://foundation.zurb.com/docs/components/grid.html
 
+## HTML5 Fallback
+
+In our implementaion of foundation 5, we use Webshims lib to provide fallback support for browsers that don't support certain features of HTML5. for a full list of the features and more info please refer to:
+
+http://afarkas.github.io/webshim/demos/
+
 ## General Rules
 
 No inline styles -- all styles should belong in an external stylesheet

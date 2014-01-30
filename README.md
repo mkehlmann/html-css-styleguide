@@ -123,7 +123,8 @@ In this example:
   * .black-btn provides the background gradient and text shadow to make a black button.
    
 
-  
+#### Understanding Sass
+  * Pragmatic Sass: http://insideasa.amsa.com/sites/FnctAreas/InfoSvcs/SaltyDawgz/Site%20Documents/pragmatic-guide-to-sass_p1_0.pdf
 
 
 *Based on the excellent work done by Richard Powell [here](https://github.com/byrichardpowell/CSS-Style)*

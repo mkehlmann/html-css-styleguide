@@ -6,7 +6,20 @@ Our ability to create changable layouts is based on "The Grid".  Please see the 
 
 http://foundation.zurb.com/docs/components/grid.html
 
-## HTML5 Support
+## <a name='TOC'>Table of Contents</a>
+
+  1. [HTML5 Support](#html5)
+  2. [General Rules](#general)
+  3. [Whitespace](#whitespace)
+  4. [!important](#important)
+  5. [Selector Naming](#naming)
+  6. [File Size and Structure](#structure)
+  7. [Available Modules](#modules)
+  8. [Creating Buttons](#buttons)
+  9. [Understanding SASS](#sass)
+  10. [Automated Testing](#testing)
+
+## <a name='html5'>HTML5 Support</a>
 
 In order to provide a consistent experience, we use a plugin "Webshims lib" to provide fallback support for browsers that don't support certain features of HTML5. This allows you to use HTML5 standard markup and validation patterns that will work in these non-compliant browsers (IE9, Safari, etc) out of the box.
 
@@ -14,7 +27,7 @@ For a full list of the features and more info please refer to:
 
 http://afarkas.github.io/webshim/demos/
 
-## General Rules
+## <a name='general'>General Rules</a>
 
 No inline styles -- all styles should belong in an external stylesheet
 
@@ -29,7 +42,7 @@ Rule Precedence -- Should be alphabetical
 }
 ```
 
-##Whitespace
+## <a name='whitespace'>Whitespace</a>
 
 * _Never_ mix spaces and tabs for indentation.
 * Use tabs (set to a size of 4 spaces)
@@ -54,10 +67,10 @@ Tip: use an [EditorConfig](http://editorconfig.org/) file (or equivalent) to
 help maintain the basic whitespace conventions that have been agreed for your
 code-base.
 
-### !important
+## <a name='important'>!important</a>
 Avoid the use of !important.  If you feel you must use it, document the heck out of why you did.
 
-### Selector Naming
+## <a name='naming'>Selector Naming</a>
 
 Selectors should use dashes in favor of underscores
 All words in a selector should be lower case
@@ -74,7 +87,7 @@ All words in a selector should be lower case
 }
 ```
 
-### File Size + Structure
+## <a name='structure'>File Size and Structure</a>
 Files should be no more than 500 lines, logic permitting
 Modules should be organized into files based on their function.
 For example, the buttons module can be seen at: http://foolink.com
@@ -82,7 +95,7 @@ For example, the buttons module can be seen at: http://foolink.com
 "If two modules are very similar with only barely noticable changes to stuff like the shadow, padding and colours combine them into one."
 
 
-### Available Modules
+## <a name='modules'>Available Modules</a>
 
   In use for Foundation 5 projects:
 
@@ -98,7 +111,7 @@ For example, the buttons module can be seen at: http://foolink.com
   10. overlays.css -- any styles for SALT overlays
   
 
-#### How to create buttons on SALT
+## <a name='buttons'>How To Create Buttons</a>
 
 All basic buttons need to have this basic HTML and CSS structure:
 
@@ -123,9 +136,12 @@ In this example:
   * .black-btn provides the background gradient and text shadow to make a black button.
    
 
-#### Understanding Sass
+## <a name='sass'>SASS</a>
   * Pragmatic Sass: http://insideasa.amsa.com/sites/FnctAreas/InfoSvcs/SaltyDawgz/Site%20Documents/pragmatic-guide-to-sass_p1_0.pdf
 
+## <a name='testing'>Integration with Automated Testing</a>
+  * In order to make automated testing easier:
+    All Buttons, Links, Input Fields, and Dropdowns should have an ID or Class. (TODO add link to naming conventions for classes and ID's)
 
 *Based on the excellent work done by Richard Powell [here](https://github.com/byrichardpowell/CSS-Style)*
 

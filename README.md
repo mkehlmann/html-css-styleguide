@@ -116,7 +116,7 @@ For example, the buttons module can be seen at: http://foolink.com
 All basic buttons need to have this basic HTML and CSS structure:
 
 ```html
-<a class="button base-btn pink-btn">See My Loans &gt;</a>
+<a class="button base-btn pink-btn">See My Loans</a>
 ```
 
 In this example:
@@ -126,7 +126,7 @@ In this example:
 
 You can include different classes to create variations:
 ```html
-<a class="button base-btn larger-btn black-btn">See My Loans &gt;</a>
+<a class="button base-btn larger-btn black-btn">See My Loans</a>
 ```
 
 In this example:

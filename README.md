@@ -134,7 +134,8 @@ In this example:
   * .base-btn still provides the basic structure and size, border radius, font styling
   * .larger-btn creates a... well, a larger button with padding, font-size and border-radius changes
   * .black-btn provides the background gradient and text shadow to make a black button.
-   
+
+NOTE: All of the arrows/chevrons in SALT buttons are added through CSS :before and :after pseudo-classes. This means you never have to type the '&lt;' or '&gt;' character in your HTML for your buttons.
 
 ## <a name='sass'>SASS</a>
   * Pragmatic Sass: http://insideasa.amsa.com/sites/FnctAreas/InfoSvcs/SaltyDawgz/Site%20Documents/pragmatic-guide-to-sass_p1_0.pdf

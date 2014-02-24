@@ -95,20 +95,51 @@ For example, the buttons module can be seen at: http://foolink.com
 "If two modules are very similar with only barely noticable changes to stuff like the shadow, padding and colours combine them into one."
 
 
-## <a name='modules'>Available Modules</a>
+## <a name='modules'>SALT CSS Module Structure</a>
 
-  In use for Foundation 5 projects:
+  SALT's CSS is currently under renovation with the goal of using a defined modular structure. As this is a Work-In-Progress, this document will be updated with the most current modular structure. This is subject to change with SWD-4881, Refactoring of CSS Modules. 
+  
+  As of 2/24/2014 and SWD-4880, a team of developers has broken the existing CSS into this modular structure currently in place in Predev5 Accurev Stream:
 
-  1. docs.css contains any of the site-wide CSS overrides
-  2. fonts.css contains all of the web fonts in use on SALT. If you ever need to add a font to SALT, create its CSS here.
-  3. icons.css -- CSS needed for icons across the site.
-  4. colorbox.css -- CSS still used by remaining colorbox modals. Please don't change this unless absolutely necessary
-  5. header.css -- CSS for the sitewide header
-  6. navigation.css -- code for the footer and mobile footer. Should be split into two modules soon.
-  7. buttons.css -- button code. See below for how to use the button classes
-  8. KWYO.css -- Styles that are currently specific only to the Know What You Owe tool. As these styles move into the rest of the site design, this CSS file should be refactored into a module that is shared across the site, rather than including KWYO.css on every page of the site.
-  9. featuredHeadline.css -- Module for creating the FEATURED section header on the homepage, the Content Type Sort pages, etc.
-  10. overlays.css -- any styles for SALT overlays
+  1. Components -- contains modules that should be global to the SALT Site.
+      a.  utilityClasses.css -- helpful classes to ease CSS positioning, alignment, Foundation's hide-for-x classes
+      b.  icons.css -- site-wide CSS code for creating icons
+      c.  typography.css -- web fonts
+      d.  forms.css -- site-wide styling for form elements
+      e.  panels.css -- site-wide CSS for panel styling
+      f.  tiles.css
+      g.  deprecated.css -- legacy code that most likely isn't being used in any HTML, or was being overwritten by other styles. Keeping for now to be safe.
+      h.  toRefactor.css -- Old CSS that should really be refactored along with its HTML and Dust. Most of what's in this file can be re-created with proper use of column nesting, panels, and other Foundation classes.
+      i.  docs.css -- should be refactored into more semantic global modules
+      j.  tooltips.css
+      k.  overlays.css
+      l.  buttons.css
+      m.  orbit.css
+
+  3. Navigation -- CSS for navigation elements
+      a.  header.css
+      b.  navigation.css
+      c.  breadcrumbs.css
+  
+  5. Themes -- CSS for different sections of the site that have distinct "look and feel", and individual/one-off styling
+      a.  basicPage.css -- Default page styling
+      b.  KWYO.css
+      c.  theRed.css
+      d.  moneyCoachProgress.css -- Money Coach/bunchball progress styling
+      e.  badges.css -- Money Coach badges
+      f.  liveChat.css
+      g.  quizWidget.css -- homepage quiz/survey
+      h.  feed-module.css -- Twitter and Blog feed modules
+      i.  glossary.css
+      j.  lessonsPage.css
+      k.  pressPage.css
+      l.  tools.css
+      m.  vlc.css
+
+  Modules yet to be sorted:
+    1. colorbox.css -- CSS still used by remaining colorbox modals. Please don't change this unless absolutely necessary
+    2. featuredHeadline.css -- Module for creating the FEATURED section header on the homepage, the Content Type Sort pages, etc.
+
   
 
 ## <a name='buttons'>How To Create Buttons</a>

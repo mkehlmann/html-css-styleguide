@@ -102,39 +102,39 @@ For example, the buttons module can be seen at: http://foolink.com
   As of 2/24/2014 and SWD-4880, a team of developers has broken the existing CSS into this modular structure currently in place in Predev5 Accurev Stream:
 
   1. Components -- contains modules that should be global to the SALT Site.
-      a.  utilityClasses.css -- helpful classes to ease CSS positioning, alignment, Foundation's hide-for-x classes
-      b.  icons.css -- site-wide CSS code for creating icons
-      c.  typography.css -- web fonts
-      d.  forms.css -- site-wide styling for form elements
-      e.  panels.css -- site-wide CSS for panel styling
-      f.  tiles.css
-      g.  deprecated.css -- legacy code that most likely isn't being used in any HTML, or was being overwritten by other styles. Keeping for now to be safe.
-      h.  toRefactor.css -- Old CSS that should really be refactored along with its HTML and Dust. Most of what's in this file can be re-created with proper use of column nesting, panels, and other Foundation classes.
-      i.  docs.css -- should be refactored into more semantic global modules
-      j.  tooltips.css
-      k.  overlays.css
-      l.  buttons.css
-      m.  orbit.css
+      * utilityClasses.css -- helpful classes to ease CSS positioning, alignment, Foundation's hide-for-x classes
+      * icons.css -- site-wide CSS code for creating icons
+      * typography.css -- web fonts
+      * forms.css -- site-wide styling for form elements
+      * panels.css -- site-wide CSS for panel styling
+      * tiles.css
+      * deprecated.css -- legacy code that most likely isn't being used in any HTML, or was being overwritten by other styles. Keeping for now to be safe.
+      * toRefactor.css -- Old CSS that should really be refactored along with its HTML and Dust. Most of what's in this file can be re-created with proper use of column nesting, panels, and other Foundation classes.
+      * docs.css -- should be refactored into more semantic global modules
+      * tooltips.css
+      * overlays.css
+      * buttons.css
+      * orbit.css
 
   3. Navigation -- CSS for navigation elements
-      a.  header.css
-      b.  navigation.css
-      c.  breadcrumbs.css
+      * header.css
+      * navigation.css
+      * breadcrumbs.css
   
   5. Themes -- CSS for different sections of the site that have distinct "look and feel", and individual/one-off styling
-      a.  basicPage.css -- Default page styling
-      b.  KWYO.css
-      c.  theRed.css
-      d.  moneyCoachProgress.css -- Money Coach/bunchball progress styling
-      e.  badges.css -- Money Coach badges
-      f.  liveChat.css
-      g.  quizWidget.css -- homepage quiz/survey
-      h.  feed-module.css -- Twitter and Blog feed modules
-      i.  glossary.css
-      j.  lessonsPage.css
-      k.  pressPage.css
-      l.  tools.css
-      m.  vlc.css
+      * basicPage.css -- Default page styling
+      * KWYO.css
+      * theRed.css
+      * moneyCoachProgress.css -- Money Coach/bunchball progress styling
+      * badges.css -- Money Coach badges
+      * liveChat.css
+      * quizWidget.css -- homepage quiz/survey
+      * feed-module.css -- Twitter and Blog feed modules
+      * glossary.css
+      * lessonsPage.css
+      * pressPage.css
+      * tools.css
+      * vlc.css
 
   Modules yet to be sorted:
     1. colorbox.css -- CSS still used by remaining colorbox modals. Please don't change this unless absolutely necessary

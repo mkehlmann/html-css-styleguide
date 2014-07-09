@@ -97,9 +97,8 @@ For example, the buttons module can be seen at: http://foolink.com
 
 ## <a name='modules'>SALT CSS Module Structure</a>
 
-  SALT's CSS is currently under renovation with the goal of using a defined modular structure. As this is a Work-In-Progress, this document will be updated with the most current modular structure. This is subject to change with SWD-4881, Refactoring of CSS Modules. 
-  
-  As of 2/24/2014 and SWD-4880, a team of developers has broken the existing CSS into this modular structure currently in place in Predev5 Accurev Stream:
+  SALT's CSS files are in a modular structure.
+
 
   1. Components -- contains modules that should be global to the SALT Site.
       * utilityClasses.css -- helpful classes to ease CSS positioning, alignment, Foundation's hide-for-x classes
@@ -122,22 +121,20 @@ For example, the buttons module can be seen at: http://foolink.com
       * breadcrumbs.css
   
   5. Themes -- CSS for different sections of the site that have distinct "look and feel", and individual/one-off styling
+      * alerts.css -- homepage / Special Alerts
+      * alertsOverlay.css -- the old code for when we used to have alerts available as an overlay from the old welcome menu in the header. This can probably be defuncted but it's unclear at this point if we'll want these alerts in an overlay again at some point.
       * basicPage.css -- Default page styling
       * KWYO.css
-      * theRed.css
-      * moneyCoachProgress.css -- Money Coach/bunchball progress styling
-      * badges.css -- Money Coach badges
       * liveChat.css
-      * quizWidget.css -- homepage quiz/survey
-      * feed-module.css -- Twitter and Blog feed modules
       * glossary.css
       * lessonsPage.css
       * pressPage.css
       * tools.css
       * vlc.css
+      * unauthHomepage.css -- creates styling for all the content sort pages
 
   Modules yet to be sorted:
-    1. colorbox.css -- CSS still used by remaining colorbox modals. Please don't change this unless absolutely necessary
+    1. colorbox.css -- CSS still used by remaining colorbox modals. Please don't change this unless absolutely necessary. The Login Overlay in the Lessons still needs this CSS.
     2. featuredHeadline.css -- Module for creating the FEATURED section header on the homepage, the Content Type Sort pages, etc.
 
   
@@ -147,26 +144,27 @@ For example, the buttons module can be seen at: http://foolink.com
 All basic buttons need to have this basic HTML and CSS structure:
 
 ```html
-<a class="button base-btn pink-btn">See My Loans</a>
+<a class="button base-btn main-btn">See My Loans</a>
 ```
 
 In this example:
   * .button includes some needed Foundation CSS and provides some overriding of ugly Foundation styles. 
-  * .base-btn provides the basic structure and size, border radius, font styling
-  * .pink-btn provides the background gradient and text shadow to make a standard SALT pink button.
+  * .base-btn provides the basic structure and size, font styling
+  * .main-btn provides the background color, box shadow, and adds the ">>" characters to make a standard SALT button.
 
 You can include different classes to create variations:
 ```html
-<a class="button base-btn larger-btn black-btn">See My Loans</a>
+<a class="button base-btn black-btn">See My Loans</a>
 ```
 
 In this example:
   * .button still provides necessary overrides
-  * .base-btn still provides the basic structure and size, border radius, font styling
-  * .larger-btn creates a... well, a larger button with padding, font-size and border-radius changes
-  * .black-btn provides the background gradient and text shadow to make a black button.
+  * .base-btn still provides the basic structure and size, font styling
+  * .black-btn provides the background color to make a black button.
 
-NOTE: All of the arrows/chevrons in SALT buttons are added through CSS :before and :after pseudo-classes. This means you never have to type the '&lt;' or '&gt;' character in your HTML for your buttons.
+NOTE: All of the arrows/chevrons in SALT buttons are added through CSS :before and :after pseudo-classes. This means you never have to type the '&lt;' or '&gt;' characters in your HTML for your buttons. Also, the text in SALT buttons is supposed to be lettercase (The First Letter Of Every Word Capitalized). We also do this with CSS, so you should just have your button text HTML following normal English capitalization rules.
+
+**Following these class names and HTML structure will keep all buttons standard and will ease any transitions in any design changes to them in the future**
 
 ## <a name='sass'>SASS</a>
   * Pragmatic Sass: http://insideasa.amsa.com/sites/FnctAreas/InfoSvcs/SaltyDawgz/Site%20Documents/pragmatic-guide-to-sass_p1_0.pdf

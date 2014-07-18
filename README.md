@@ -9,14 +9,15 @@ http://foundation.zurb.com/docs/components/grid.html
 ## <a name='TOC'>Table of Contents</a>
 
   1. [HTML5 Support](#html5)
-  2. [General Rules](#general)
-  3. [Whitespace](#whitespace)
-  4. [!important](#important)
-  5. [Selector Naming](#naming)
-  6. [File Size and Structure](#structure)
-  7. [Available Modules](#modules)
-  8. [Creating Buttons](#buttons)
-  9. [Automated Testing](#testing)
+  2. [CSS Resources](#resources)
+  3. [General Rules](#general)
+  4. [Whitespace](#whitespace)
+  5. [!important](#important)
+  6. [Selector Naming](#naming)
+  7. [File Size and Structure](#structure)
+  8. [Available Modules](#modules)
+  9. [Creating Buttons](#buttons)
+  10. [Automated Testing](#testing)
 
 ## <a name='html5'>HTML5 Support</a>
 
@@ -26,13 +27,22 @@ For a full list of the features and more info please refer to:
 
 http://afarkas.github.io/webshim/demos/
 
+## <a name='resources'>CSS Resources</a>
+
+If you need some beginner guidance with CSS, you can work through the free tutorial in Mozilla Developer's Guide for CSS:
+<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started">https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started</a>
+
+For more advanced techniques, code snippets, and a nicely annoted CSS glossary, take a look at these resources:
+1. <a href="css-tricks.com">CSS Tricks</a>
+2. <a href="http://www.smashingmagazine.com/tag/css/">Smashing Magazine</a>
+3. <a href="http://www.smashingmagazine.com/tag/css/">Smashing Magazine</a>
+
 ## <a name='general'>General Rules</a>
 
 No inline styles -- all styles should belong in an external stylesheet
 
 If you are unfamiliar with the box model, do not pass GO, read this: https://developer.mozilla.org/en-US/docs/Web/CSS/box_model
 
-Rule Precedence -- Should be alphabetical
 
 ```css
 .foo {

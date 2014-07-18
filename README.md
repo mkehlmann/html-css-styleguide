@@ -16,8 +16,7 @@ http://foundation.zurb.com/docs/components/grid.html
   6. [File Size and Structure](#structure)
   7. [Available Modules](#modules)
   8. [Creating Buttons](#buttons)
-  9. [Understanding SASS](#sass)
-  10. [Automated Testing](#testing)
+  9. [Automated Testing](#testing)
 
 ## <a name='html5'>HTML5 Support</a>
 
@@ -166,8 +165,6 @@ NOTE: All of the arrows/chevrons in SALT buttons are added through CSS :before a
 
 **Following these class names and HTML structure will keep all buttons standard and will ease any transitions in any design changes to them in the future**
 
-## <a name='sass'>SASS</a>
-  * Pragmatic Sass: http://insideasa.amsa.com/sites/FnctAreas/InfoSvcs/SaltyDawgz/Site%20Documents/pragmatic-guide-to-sass_p1_0.pdf
 
 ## <a name='testing'>Integration with Automated Testing</a>
   * In order to make automated testing easier:
